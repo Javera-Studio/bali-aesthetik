@@ -31,7 +31,7 @@ export function CtaBanner() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[color:var(--ink)] text-[color:var(--cream)] h-[52px] px-10 text-[14px] font-[400] tracking-[0.03em] leading-[1.4] hover:bg-[color:var(--brown)] transition-colors shadow-warm"
+              className="inline-flex items-center justify-center rounded-full bg-[#6B4A36] text-[#F8F4EE] h-[52px] px-8 text-[15px] font-[500] tracking-[0.02em] leading-[1.4] hover:bg-[#7A5540] transition-colors duration-300 shadow-warm"
             >
               {WHATSAPP_CTA}
             </a>

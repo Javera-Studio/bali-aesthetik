@@ -161,12 +161,12 @@
 .pampas-deco-left {
   left: 0;
   bottom: 0;
-  transform: translateY(35%);
+  transform: translateY(20%);
 }
 .pampas-deco-right {
   right: 0;
   bottom: 0;
-  transform: translateY(35%);
+  transform: translateY(20%);
 }
 @media (max-width: 767px) {
   .pampas-deco {
