@@ -5,9 +5,9 @@ const logo = "/images/logo.png";
 export function Footer() {
   return (
     <footer className="bg-[color:var(--cream)] border-t border-[color:var(--border)]">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 grid md:grid-cols-3 gap-10">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 grid md:grid-cols-2 gap-10">
         <div>
-          <img src={logo} alt="BALI ÄSTHETIK" className="h-14 w-auto" />
+          <img src={logo} alt="BALI ÄSTHETIK" className="h-[73px] w-auto" />
           <p className="mt-5 text-sm text-[color:var(--ink-soft)] leading-relaxed">
             BALI ÄSTHETIK by Angelina Balizki
             <br />
@@ -28,19 +28,6 @@ export function Footer() {
               </a>
             </li>
           </ul>
-        </div>
-        <div>
-          <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--gold)] mb-4">
-            Kontakt
-          </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-[color:var(--ink)] text-[color:var(--cream)] px-5 py-2.5 text-xs tracking-[0.18em] uppercase hover:bg-[color:var(--brown)] transition-colors"
-          >
-            WhatsApp schreiben
-          </a>
         </div>
       </div>
       <div className="border-t border-[color:var(--border)]">

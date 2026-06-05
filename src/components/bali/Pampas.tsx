@@ -31,6 +31,9 @@ export function Pampas({
         filter: blur ? `blur(${blur}px)` : undefined,
         transform: rotate ? `rotate(${rotate}deg)` : undefined,
         zIndex: 0,
+        ...(side === "left"
+          ? { left: "calc(0px - ((100vw - 100%) / 2))" }
+          : { right: "calc(0px - ((100vw - 100%) / 2))" }),
         maskImage: [
           "linear-gradient(to bottom, transparent 0%, black 20%, black 52%, transparent 88%)",
           side === "left"
