@@ -47,7 +47,7 @@ export function AboutComingSoon() {
 
           <div className="mt-10 pt-8 border-t border-[color:var(--border)]">
               <p className="text-[color:var(--ink-soft)] leading-relaxed mb-6">
-                Lerne mich persönlich kennen und lass uns gemeinsam deinen perfekten Look finden.
+                Schönheit beginnt mit Vertrauen. Ich nehme mir Zeit für jede Kundin und finde gemeinsam mit dir den Look, der perfekt zu dir passt.
               </p>
               <a
                 href={WHATSAPP_URL}

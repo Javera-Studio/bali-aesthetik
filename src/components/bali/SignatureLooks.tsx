@@ -158,7 +158,7 @@ export function SignatureLooks() {
         <Reveal>
           <div className="mt-24 md:mt-32 text-center max-w-lg mx-auto">
             <p className="text-[color:var(--ink-soft)] text-lg leading-relaxed mb-8">
-              Jeder Look wird individuell auf deine Augenform und deine Wünsche abgestimmt.
+              Noch unsicher, welcher Look zu dir passt? Gemeinsam finden wir die perfekte Technik für deine Augenform, deine Wünsche und deinen persönlichen Stil.
             </p>
             <a
               href={WHATSAPP_URL}
@@ -166,7 +166,7 @@ export function SignatureLooks() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-[color:var(--ink)] text-[color:var(--cream)] h-[52px] px-10 text-[14px] font-[400] tracking-[0.03em] leading-[1.4] hover:bg-[color:var(--brown)] transition-colors"
             >
-              Beratung anfragen
+              Welcher Look passt zu mir?
             </a>
           </div>
         </Reveal>
