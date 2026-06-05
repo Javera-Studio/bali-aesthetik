@@ -1,5 +1,6 @@
-import logo from "@/assets/logo.png.asset.json";
 import { WHATSAPP_URL } from "@/lib/contact";
+
+const logo = "/images/logo.png";
 
 const links = [
   { href: "#studio", label: "Studio" },
@@ -14,7 +15,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 backdrop-blur-md bg-[color:var(--cream)]/80 border-b border-[color:var(--border)]">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 h-20 flex items-center justify-between gap-6">
         <a href="#top" className="flex items-center gap-3 shrink-0">
-          <img src={logo.url} alt="BALI ÄSTHETIK Logo" className="h-10 w-auto md:h-12" />
+          <img src={logo} alt="BALI ÄSTHETIK Logo" className="h-10 w-auto md:h-12" />
         </a>
         <nav className="hidden md:flex items-center gap-9 text-sm tracking-[0.14em] uppercase text-[color:var(--ink-soft)]">
           {links.map((l) => (

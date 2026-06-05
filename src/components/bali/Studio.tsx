@@ -1,4 +1,4 @@
-import studio from "@/assets/studio.jpeg.asset.json";
+const studio = "/images/studio.jpeg";
 import { Reveal } from "./Reveal";
 
 const values = [
@@ -12,7 +12,7 @@ export function Studio() {
     <section id="studio" className="relative bg-[color:var(--sand)]">
       <div className="relative w-full">
         <img
-          src={studio.url}
+          src={studio}
           alt="Empfangsbereich des BALI Studios"
           width={1920}
           height={900}

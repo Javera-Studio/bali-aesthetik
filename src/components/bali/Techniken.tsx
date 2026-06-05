@@ -1,4 +1,4 @@
-import technik from "@/assets/technik.jpg.asset.json";
+const technik = "/images/technik.jpg";
 import { Reveal } from "./Reveal";
 
 const items = [
@@ -16,7 +16,7 @@ export function Techniken() {
         <Reveal>
           <div className="rounded-[2rem] overflow-hidden gold-frame bg-[color:var(--cream)]">
             <img
-              src={technik.url}
+              src={technik}
               alt="Verschiedene Wimpern-Techniken bei BALI Ästhetik"
               width={900}
               height={1000}

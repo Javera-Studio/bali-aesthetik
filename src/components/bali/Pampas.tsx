@@ -1,5 +1,5 @@
-import grasLeft from "@/assets/gras_left.png.asset.json";
-import grasRight from "@/assets/gras_right.png.asset.json";
+const grasLeft = "/images/gras_left.png";
+const grasRight = "/images/gras_right.png";
 
 type Side = "left" | "right";
 
@@ -18,7 +18,7 @@ export function Pampas({
   blur = 0,
   rotate = 0,
 }: Props) {
-  const src = side === "left" ? grasLeft.url : grasRight.url;
+  const src = side === "left" ? grasLeft : grasRight;
   return (
     <img
       src={src}

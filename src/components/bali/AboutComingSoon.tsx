@@ -1,4 +1,4 @@
-import angelina from "@/assets/angelina.jpeg.asset.json";
+const angelina = "/images/angelina.jpeg";
 import { Reveal } from "./Reveal";
 import { Pampas } from "./Pampas";
 
@@ -24,7 +24,7 @@ export function AboutComingSoon() {
             />
             <div className="relative rounded-[2rem] overflow-hidden gold-frame">
               <img
-                src={angelina.url}
+                src={angelina}
                 alt="Angelina Balizki – Gründerin von BALI Ästhetik"
                 width={800}
                 height={1000}

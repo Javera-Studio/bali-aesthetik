@@ -1,4 +1,4 @@
-import studio from "@/assets/studio.jpeg.asset.json";
+const studio = "/images/studio.jpeg";
 import { WHATSAPP_URL, WHATSAPP_CTA, STUDIO_LOCATION } from "@/lib/contact";
 import { Pampas } from "./Pampas";
 
@@ -69,7 +69,7 @@ export function Hero() {
         <div className="relative animate-fade-up" style={{ animationDelay: "120ms" }}>
           <div className="relative rounded-[2rem] overflow-hidden gold-frame">
             <img
-              src={studio.url}
+              src={studio}
               alt="BALI Ästhetik Studio mit warmer Beleuchtung"
               width={900}
               height={1200}

@@ -1,15 +1,10 @@
-import lash1 from "@/assets/lash1.png.asset.json";
-import lash2 from "@/assets/lash2.png.asset.json";
-import lash3 from "@/assets/lash3.png.asset.json";
-import lash4 from "@/assets/lash4.png.asset.json";
-import looks from "@/assets/looks.jpeg.asset.json";
 import { Reveal } from "./Reveal";
 
 const gallery = [
-  { src: lash1.url, alt: "Wimpernverlängerung Ergebnis 1" },
-  { src: lash2.url, alt: "Wimpernverlängerung Ergebnis 2" },
-  { src: lash3.url, alt: "Wimpernverlängerung Ergebnis 3" },
-  { src: lash4.url, alt: "Wimpernverlängerung Ergebnis 4" },
+  { src: "/images/lash1.png", alt: "Wimpernverlängerung Ergebnis 1" },
+  { src: "/images/lash2.png", alt: "Wimpernverlängerung Ergebnis 2" },
+  { src: "/images/lash3.png", alt: "Wimpernverlängerung Ergebnis 3" },
+  { src: "/images/lash4.png", alt: "Wimpernverlängerung Ergebnis 4" },
 ];
 
 export function Ergebnisse() {
@@ -52,7 +47,7 @@ export function Ergebnisse() {
         <Reveal delay={150}>
           <div className="mt-6 md:mt-8 rounded-[1.75rem] overflow-hidden gold-frame">
             <img
-              src={looks.url}
+              src="/images/looks.jpeg"
               alt="Übersicht verschiedener Lash-Looks von Angelina"
               width={1600}
               height={900}
