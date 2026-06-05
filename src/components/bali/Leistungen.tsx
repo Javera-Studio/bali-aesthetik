@@ -32,12 +32,12 @@ const tiers = [
 function PriceRow({ label, price }: { label: string; price: string }) {
   return (
     <div className="flex items-baseline gap-3 text-[color:var(--ink)]">
-      <span className="font-display text-lg md:text-xl tracking-wide">{label}</span>
+      <span className="font-display text-[20px] md:text-[22px] tracking-wide">{label}</span>
       <span
         aria-hidden
         className="flex-1 border-b border-dotted border-[color:var(--gold)]/50 translate-y-[-4px]"
       />
-      <span className="font-display text-lg md:text-xl text-[color:var(--brown)]">{price}</span>
+      <span className="font-display text-[20px] md:text-[22px] text-[color:var(--brown)]">{price}</span>
     </div>
   );
 }
