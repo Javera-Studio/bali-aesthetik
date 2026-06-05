@@ -31,6 +31,8 @@ export function Pampas({
         filter: blur ? `blur(${blur}px)` : undefined,
         transform: rotate ? `rotate(${rotate}deg)` : undefined,
         zIndex: 0,
+        maskImage: "linear-gradient(to bottom, black 55%, transparent 100%)",
+        WebkitMaskImage: "linear-gradient(to bottom, black 55%, transparent 100%)",
       }}
     />
   );
