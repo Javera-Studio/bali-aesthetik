@@ -7,13 +7,13 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden bg-[color:var(--cream)]">
       <Pampas
         side="left"
-        className="left-0 top-0 h-[500px] w-auto"
+        className="left-0 top-0 w-[20vw] h-auto"
         opacity={0.35}
         blur={1}
       />
       <Pampas
         side="right"
-        className="right-0 top-20 h-[560px] w-auto"
+        className="right-0 top-20 w-[20vw] h-auto"
         opacity={0.35}
         blur={1}
       />

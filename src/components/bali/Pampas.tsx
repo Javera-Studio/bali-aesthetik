@@ -37,14 +37,14 @@ export function Pampas({
         maskImage: [
           "linear-gradient(to bottom, transparent 0%, black 20%, black 52%, transparent 88%)",
           side === "left"
-            ? "linear-gradient(to right, black 0%, black 55%, transparent 100%)"
-            : "linear-gradient(to left, black 0%, black 55%, transparent 100%)",
+            ? "linear-gradient(to right, transparent 0%, black 15%, black 60%, transparent 100%)"
+            : "linear-gradient(to left, transparent 0%, black 15%, black 60%, transparent 100%)",
         ].join(", "),
         WebkitMaskImage: [
           "linear-gradient(to bottom, transparent 0%, black 20%, black 52%, transparent 88%)",
           side === "left"
-            ? "linear-gradient(to right, black 0%, black 55%, transparent 100%)"
-            : "linear-gradient(to left, black 0%, black 55%, transparent 100%)",
+            ? "linear-gradient(to right, transparent 0%, black 15%, black 60%, transparent 100%)"
+            : "linear-gradient(to left, transparent 0%, black 15%, black 60%, transparent 100%)",
         ].join(", "),
         maskComposite: "intersect",
         WebkitMaskComposite: "destination-in",

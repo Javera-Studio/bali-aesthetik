@@ -7,13 +7,13 @@ export function CtaBanner() {
     <section className="relative overflow-hidden bg-[color:var(--sand-deep)] py-24 md:py-32">
       <Pampas
         side="left"
-        className="left-0 bottom-0 h-[460px] w-auto"
+        className="left-0 bottom-0 w-[16vw] h-auto"
         opacity={0.6}
         blur={1}
       />
       <Pampas
         side="right"
-        className="right-0 top-0 h-[440px] w-auto"
+        className="right-0 top-0 w-[16vw] h-auto"
         opacity={0.6}
         blur={1}
       />

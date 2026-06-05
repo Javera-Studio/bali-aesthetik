@@ -61,13 +61,13 @@ export function Leistungen() {
     >
       <Pampas
         side="left"
-        className="left-0 top-10 h-[640px] w-auto"
+        className="left-0 top-10 w-[18vw] h-auto"
         opacity={0.4}
         blur={1}
       />
       <Pampas
         side="right"
-        className="right-0 bottom-0 h-[660px] w-auto"
+        className="right-0 bottom-0 w-[18vw] h-auto"
         opacity={0.4}
         blur={1}
       />
