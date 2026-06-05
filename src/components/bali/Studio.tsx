@@ -1,4 +1,3 @@
-const studio = "/images/studio.jpeg";
 import { Reveal } from "./Reveal";
 
 const values = [
@@ -8,9 +7,9 @@ const values = [
 ];
 
 const gallery = [
-  { src: studio, label: "Empfang" },
-  { src: studio, label: "Atmosphäre" },
-  { src: studio, label: "Details" },
+  { src: "/images/studio1.jpg", label: "Empfang" },
+  { src: "/images/studio2.jpg", label: "Atmosphäre" },
+  { src: "/images/studio3.jpg", label: "Details" },
 ];
 
 export function Studio() {
