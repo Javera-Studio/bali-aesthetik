@@ -1,5 +1,6 @@
 const technik = "/images/technik.jpg";
 import { Reveal } from "./Reveal";
+import { Pampas } from "./Pampas";
 
 const looks = [
   {
@@ -46,8 +47,9 @@ const looks = [
 
 export function SignatureLooks() {
   return (
-    <section id="looks" className="bg-[#F5F0EA] py-24 md:py-36">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+    <section id="looks" className="relative overflow-hidden bg-[#F5F0EA] py-24 md:py-36">
+      <Pampas side="right" />
+      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
 
         {/* Section header */}
         <Reveal>

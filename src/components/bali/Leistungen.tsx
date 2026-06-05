@@ -60,7 +60,6 @@ export function Leistungen() {
       className="relative overflow-hidden bg-[color:var(--cream)] py-24 md:py-32"
     >
       <Pampas side="left" />
-      <Pampas side="right" />
 
       {/* Großes transparentes B im Hintergrund */}
       <div

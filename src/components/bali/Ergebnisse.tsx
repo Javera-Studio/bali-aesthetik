@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import { Pampas } from "./Pampas";
 
 const gallery = [
   { src: "/images/lash1.png", alt: "Wimpernverlängerung Ergebnis 1" },
@@ -9,8 +10,9 @@ const gallery = [
 
 export function Ergebnisse() {
   return (
-    <section id="ergebnisse" className="bg-[color:var(--cream)] py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+    <section id="ergebnisse" className="relative overflow-hidden bg-[color:var(--cream)] py-24 md:py-32">
+      <Pampas side="right" />
+      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <div className="max-w-2xl">
             <p className="text-xs tracking-[0.32em] uppercase text-[color:var(--gold)] mb-5">

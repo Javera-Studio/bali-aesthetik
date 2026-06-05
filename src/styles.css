@@ -153,41 +153,25 @@
   position: absolute;
   width: clamp(858px, 60vw, 1386px);
   height: auto;
-  opacity: 0.16;
+  opacity: 0.12;
   pointer-events: none;
   user-select: none;
   z-index: 0;
 }
 .pampas-deco-left {
   left: -120px;
-  top: 50%;
-  transform: translateY(-50%);
-  mask-image:
-    linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%),
-    linear-gradient(to right, black 0%, black 55%, transparent 100%);
-  -webkit-mask-image:
-    linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%),
-    linear-gradient(to right, black 0%, black 55%, transparent 100%);
-  mask-composite: intersect;
-  -webkit-mask-composite: destination-in;
+  bottom: 0;
+  transform: translateY(35%);
 }
 .pampas-deco-right {
   right: -120px;
-  top: 50%;
-  transform: translateY(-50%);
-  mask-image:
-    linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%),
-    linear-gradient(to left, black 0%, black 55%, transparent 100%);
-  -webkit-mask-image:
-    linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%),
-    linear-gradient(to left, black 0%, black 55%, transparent 100%);
-  mask-composite: intersect;
-  -webkit-mask-composite: destination-in;
+  bottom: 0;
+  transform: translateY(35%);
 }
 @media (max-width: 767px) {
   .pampas-deco {
     width: 726px;
-    opacity: 0.10;
+    opacity: 0.08;
   }
   .pampas-deco-left {
     left: -120px;

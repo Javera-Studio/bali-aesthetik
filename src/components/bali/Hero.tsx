@@ -1,6 +1,5 @@
 const studio = "/images/studio.jpeg";
 import { WHATSAPP_URL, WHATSAPP_CTA, STUDIO_LOCATION } from "@/lib/contact";
-import { Pampas } from "./Pampas";
 
 export function Hero() {
   return (
@@ -24,7 +23,6 @@ export function Hero() {
             "linear-gradient(to right, #FAF7F2 0%, #FAF7F2 28%, rgba(250,247,242,0.72) 50%, rgba(250,247,242,0.0) 72%)",
         }}
       />
-
       {/* Mobile: cream overlay so text stays readable */}
       <div
         className="absolute inset-0 md:hidden"
@@ -33,9 +31,6 @@ export function Hero() {
             "linear-gradient(to bottom, rgba(250,247,242,0.93) 0%, rgba(250,247,242,0.82) 70%, rgba(250,247,242,0.60) 100%)",
         }}
       />
-
-      <Pampas side="left" />
-      <Pampas side="right" />
 
       {/* Text content */}
       <div className="relative z-10 mx-auto max-w-7xl w-full px-5 sm:px-10 py-24 md:py-36">
