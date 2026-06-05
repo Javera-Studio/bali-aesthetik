@@ -151,26 +151,18 @@
 /* ── Pampas decoration ───────────────────────────────────────────── */
 .pampas-deco {
   position: absolute;
-  width: clamp(858px, 60vw, 1386px);
+  width: clamp(260px, 18vw, 420px);
   height: auto;
-  opacity: 0.12;
+  opacity: 0.06;
   pointer-events: none;
   user-select: none;
   z-index: 0;
 }
-.pampas-deco-left {
-  left: 0;
+.pampas-left {
+  left: -150px;
   bottom: 0;
-  transform: translateY(20%);
 }
-.pampas-deco-right {
-  right: 0;
+.pampas-right {
+  right: -150px;
   bottom: 0;
-  transform: translateY(20%);
-}
-@media (max-width: 767px) {
-  .pampas-deco {
-    width: 726px;
-    opacity: 0.08;
-  }
 }

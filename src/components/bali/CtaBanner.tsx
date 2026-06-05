@@ -1,9 +1,12 @@
 import { WHATSAPP_URL, WHATSAPP_CTA } from "@/lib/contact";
 import { Reveal } from "./Reveal";
+import { Pampas } from "./Pampas";
 
 export function CtaBanner() {
   return (
     <section className="relative overflow-hidden bg-[color:var(--sand-deep)] py-24 md:py-32">
+      <Pampas side="left" />
+      <Pampas side="right" />
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"

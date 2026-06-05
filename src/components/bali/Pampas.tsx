@@ -11,7 +11,7 @@ export function Pampas({ side }: { side: Side }) {
       alt=""
       aria-hidden
       loading="lazy"
-      className={`pampas-deco ${side === "left" ? "pampas-deco-left" : "pampas-deco-right"}`}
+      className={`pampas-deco ${side === "left" ? "pampas-left" : "pampas-right"}`}
     />
   );
 }
