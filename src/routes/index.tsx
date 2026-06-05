@@ -23,7 +23,7 @@ function Index() {
       {/* Pampas — fixed at screen edges, outside all content containers */}
       <div
         className="fixed inset-0 pointer-events-none overflow-hidden"
-        style={{ zIndex: 5 }}
+        style={{ zIndex: 50 }}
         aria-hidden
       >
         <img src={grasLeft} alt="" loading="lazy" className="pampas-deco pampas-deco-left" />
