@@ -159,7 +159,7 @@
   z-index: 0;
 }
 .pampas-deco-left {
-  left: -80px;
+  left: -120px;
   top: 50%;
   transform: translateY(-50%);
   mask-image:
@@ -172,7 +172,7 @@
   -webkit-mask-composite: destination-in;
 }
 .pampas-deco-right {
-  right: -80px;
+  right: -120px;
   top: 50%;
   transform: translateY(-50%);
   mask-image:
@@ -190,9 +190,9 @@
     opacity: 0.10;
   }
   .pampas-deco-left {
-    left: -80px;
+    left: -120px;
   }
   .pampas-deco-right {
-    right: -80px;
+    right: -120px;
   }
 }
