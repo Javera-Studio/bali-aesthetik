@@ -37,13 +37,13 @@ export function Hero() {
       {/* Pampas — aus dem Seitenrand ragend */}
       <Pampas
         side="left"
-        className="left-[-120px] top-0 w-[24vw] h-auto"
+        className="left-[-120px] top-0 w-[48vw] h-auto"
         opacity={0.18}
         blur={1}
       />
       <Pampas
         side="right"
-        className="right-[-120px] top-0 w-[24vw] h-auto"
+        className="right-[-120px] top-0 w-[48vw] h-auto"
         opacity={0.18}
         blur={1}
       />
