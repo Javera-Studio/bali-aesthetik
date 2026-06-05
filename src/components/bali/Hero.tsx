@@ -1,5 +1,4 @@
 const studio = "/images/studio.jpeg";
-import { STUDIO_LOCATION } from "@/lib/contact";
 
 export function Hero() {
   return (
@@ -36,7 +35,7 @@ export function Hero() {
       <div className="relative z-10 mx-auto max-w-7xl w-full px-5 sm:px-10 py-24 md:py-36">
         <div className="max-w-[520px] animate-fade-up">
           <p className="text-xs tracking-[0.32em] uppercase text-[color:var(--gold)] mb-6">
-            Lashes &amp; Brows · {STUDIO_LOCATION}
+            Lashes &amp; Brows · Mit Liebe zum Detail
           </p>
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl leading-[0.95] text-[color:var(--ink)]">
             BALI
