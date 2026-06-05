@@ -30,12 +30,12 @@ export function Ergebnisse() {
         <div className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {gallery.map((g, i) => (
             <Reveal key={g.src} delay={i * 80}>
-              <div className="rounded-[1.5rem] overflow-hidden gold-frame bg-[color:var(--sand)] aspect-[4/5]">
+              <div className="rounded-[1.5rem] overflow-hidden gold-frame bg-[color:var(--sand)] aspect-[3/4]">
                 <img
                   src={g.src}
                   alt={g.alt}
                   width={600}
-                  height={750}
+                  height={800}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.04]"
                 />
@@ -43,19 +43,6 @@ export function Ergebnisse() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal delay={150}>
-          <div className="mt-6 md:mt-8 rounded-[1.75rem] overflow-hidden gold-frame">
-            <img
-              src="/images/looks.jpeg"
-              alt="Übersicht verschiedener Lash-Looks von Angelina"
-              width={1600}
-              height={900}
-              loading="lazy"
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        </Reveal>
       </div>
     </section>
   );
