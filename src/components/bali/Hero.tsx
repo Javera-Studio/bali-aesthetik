@@ -4,35 +4,53 @@ import { Pampas } from "./Pampas";
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-[color:var(--cream)]">
+    <section
+      id="top"
+      className="relative overflow-hidden flex items-center min-h-[88vh] md:min-h-[100vh]"
+    >
+      {/* Full-bleed background image */}
+      <img
+        src={studio}
+        alt="BALI Ästhetik Studio mit warmer Beleuchtung"
+        fetchPriority="high"
+        className="absolute inset-0 w-full h-full object-cover object-[62%_center] md:object-[58%_center]"
+      />
+
+      {/* Desktop: soft left-to-right fade */}
+      <div
+        className="absolute inset-0 hidden md:block"
+        style={{
+          background:
+            "linear-gradient(to right, #FAF7F2 0%, #FAF7F2 28%, rgba(250,247,242,0.72) 50%, rgba(250,247,242,0.0) 72%)",
+        }}
+      />
+
+      {/* Mobile: cream overlay so text stays readable */}
+      <div
+        className="absolute inset-0 md:hidden"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(250,247,242,0.93) 0%, rgba(250,247,242,0.82) 70%, rgba(250,247,242,0.60) 100%)",
+        }}
+      />
+
+      {/* Pampas — aus dem Seitenrand ragend */}
       <Pampas
         side="left"
-        className="left-0 top-0 w-[20vw] h-auto"
-        opacity={0.35}
+        className="left-[-120px] top-0 w-[24vw] h-auto"
+        opacity={0.18}
         blur={1}
       />
       <Pampas
         side="right"
-        className="right-0 top-20 w-[20vw] h-auto"
-        opacity={0.35}
+        className="right-[-120px] top-0 w-[24vw] h-auto"
+        opacity={0.18}
         blur={1}
       />
 
-      {/* huge translucent BALI wordmark */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 flex items-center justify-center select-none"
-      >
-        <span
-          className="font-display text-[28vw] leading-none tracking-[-0.05em] text-[color:var(--beige)]"
-          style={{ opacity: 0.18, fontWeight: 500 }}
-        >
-          BALI
-        </span>
-      </div>
-
-      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 pt-12 pb-20 md:pt-20 md:pb-32 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-        <div className="animate-fade-up">
+      {/* Text content */}
+      <div className="relative z-10 mx-auto max-w-7xl w-full px-5 sm:px-10 py-24 md:py-36">
+        <div className="max-w-[520px] animate-fade-up">
           <p className="text-xs tracking-[0.32em] uppercase text-[color:var(--gold)] mb-6">
             Lashes &amp; Brows · {STUDIO_LOCATION}
           </p>
@@ -53,35 +71,16 @@ export function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[color:var(--ink)] text-[color:var(--cream)] px-7 py-4 text-sm tracking-[0.14em] uppercase hover:bg-[color:var(--brown)] transition-colors shadow-warm-sm"
+              className="inline-flex items-center justify-center rounded-full bg-[#4A3427] text-white h-[52px] px-8 text-[13px] font-medium tracking-[0.12em] uppercase leading-[1.2] hover:bg-[#5A4031] transition-colors"
             >
               {WHATSAPP_CTA}
             </a>
             <a
               href="#leistungen"
-              className="inline-flex items-center justify-center rounded-full border border-[color:var(--brown)]/40 text-[color:var(--ink)] px-7 py-4 text-sm tracking-[0.14em] uppercase hover:bg-[color:var(--sand)] transition-colors"
+              className="inline-flex items-center justify-center rounded-full border border-[#D8C7B7] bg-transparent text-[#7A6454] h-[52px] px-8 text-[13px] font-medium tracking-[0.12em] uppercase leading-[1.2] hover:bg-[#F5F0EA] transition-colors"
             >
               Preise ansehen
             </a>
-          </div>
-        </div>
-
-        <div className="relative animate-fade-up" style={{ animationDelay: "120ms" }}>
-          <div className="relative rounded-[2rem] overflow-hidden gold-frame">
-            <img
-              src={studio}
-              alt="BALI Ästhetik Studio mit warmer Beleuchtung"
-              width={900}
-              height={1200}
-              fetchPriority="high"
-              className="w-full h-[460px] md:h-[640px] object-cover"
-            />
-          </div>
-          <div className="absolute -bottom-6 -left-6 hidden md:block bg-[color:var(--cream)] rounded-2xl px-5 py-4 shadow-warm-sm border border-[color:var(--border)]">
-            <p className="font-script text-2xl text-[color:var(--gold)] leading-none">welcome</p>
-            <p className="text-xs tracking-[0.2em] uppercase text-[color:var(--ink-soft)] mt-1">
-              warm · ruhig · privat
-            </p>
           </div>
         </div>
       </div>
