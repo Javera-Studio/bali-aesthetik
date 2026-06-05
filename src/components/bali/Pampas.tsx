@@ -32,16 +32,16 @@ export function Pampas({
         transform: rotate ? `rotate(${rotate}deg)` : undefined,
         zIndex: 0,
         maskImage: [
-          "linear-gradient(to bottom, transparent 0%, black 22%, black 65%, transparent 100%)",
+          "linear-gradient(to bottom, transparent 0%, black 20%, black 52%, transparent 88%)",
           side === "left"
-            ? "linear-gradient(to right, transparent 0%, black 30%, black 100%)"
-            : "linear-gradient(to left, transparent 0%, black 30%, black 100%)",
+            ? "linear-gradient(to right, black 0%, black 55%, transparent 100%)"
+            : "linear-gradient(to left, black 0%, black 55%, transparent 100%)",
         ].join(", "),
         WebkitMaskImage: [
-          "linear-gradient(to bottom, transparent 0%, black 22%, black 65%, transparent 100%)",
+          "linear-gradient(to bottom, transparent 0%, black 20%, black 52%, transparent 88%)",
           side === "left"
-            ? "linear-gradient(to right, transparent 0%, black 30%, black 100%)"
-            : "linear-gradient(to left, transparent 0%, black 30%, black 100%)",
+            ? "linear-gradient(to right, black 0%, black 55%, transparent 100%)"
+            : "linear-gradient(to left, black 0%, black 55%, transparent 100%)",
         ].join(", "),
         maskComposite: "intersect",
         WebkitMaskComposite: "destination-in",
