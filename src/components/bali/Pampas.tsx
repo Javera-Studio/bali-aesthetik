@@ -30,18 +30,18 @@ export function Pampas({
         opacity,
         filter: blur ? `blur(${blur}px)` : undefined,
         transform: rotate ? `rotate(${rotate}deg)` : undefined,
-        zIndex: 0,
+        zIndex: 1,
         maskImage: [
-          "linear-gradient(to bottom, transparent 0%, black 20%, black 52%, transparent 88%)",
+          "linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%)",
           side === "left"
-            ? "linear-gradient(to right, transparent 0%, black 15%, black 60%, transparent 100%)"
-            : "linear-gradient(to left, transparent 0%, black 15%, black 60%, transparent 100%)",
+            ? "linear-gradient(to right, black 0%, black 55%, transparent 100%)"
+            : "linear-gradient(to left, black 0%, black 55%, transparent 100%)",
         ].join(", "),
         WebkitMaskImage: [
-          "linear-gradient(to bottom, transparent 0%, black 20%, black 52%, transparent 88%)",
+          "linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%)",
           side === "left"
-            ? "linear-gradient(to right, transparent 0%, black 15%, black 60%, transparent 100%)"
-            : "linear-gradient(to left, transparent 0%, black 15%, black 60%, transparent 100%)",
+            ? "linear-gradient(to right, black 0%, black 55%, transparent 100%)"
+            : "linear-gradient(to left, black 0%, black 55%, transparent 100%)",
         ].join(", "),
         maskComposite: "intersect",
         WebkitMaskComposite: "destination-in",

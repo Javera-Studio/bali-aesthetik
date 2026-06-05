@@ -7,34 +7,25 @@ const values = [
   { title: "Individuell", text: "Ausführliche Beratung. Dein Look wird zu deinem Auge gemacht." },
 ];
 
+const gallery = [
+  { src: studio, label: "Empfang" },
+  { src: studio, label: "Atmosphäre" },
+  { src: studio, label: "Details" },
+];
+
 export function Studio() {
   return (
-    <section id="studio" className="relative bg-[color:var(--sand)]">
-      <div className="relative w-full">
-        <img
-          src={studio}
-          alt="Empfangsbereich des BALI Studios"
-          width={1920}
-          height={900}
-          loading="lazy"
-          className="w-full h-[60vh] md:h-[80vh] object-cover"
-        />
-        <div
-          aria-hidden
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(59,42,31,0) 40%, rgba(59,42,31,0.55) 100%)",
-          }}
-        />
-      </div>
-      <div className="mx-auto max-w-5xl px-5 sm:px-8 py-20 md:py-28 text-center">
+    <section id="studio" className="bg-[color:var(--sand)] py-24 md:py-32">
+
+      {/* Text + cards */}
+      <div className="mx-auto max-w-5xl px-5 sm:px-8 text-center">
         <Reveal>
           <p className="text-xs tracking-[0.32em] uppercase text-[color:var(--gold)] mb-5">
             Das Studio
           </p>
           <h2 className="font-display text-4xl md:text-5xl leading-tight">
-            Ein Ort zum <span className="font-script text-[color:var(--gold)]">Wohlfühlen</span>
+            Ein Ort zum{" "}
+            <span className="font-script text-[color:var(--gold)]">Wohlfühlen</span>
           </h2>
           <p className="mt-6 text-[color:var(--ink-soft)] text-lg leading-relaxed max-w-2xl mx-auto">
             Warme Naturtöne, sanftes Licht und eine ruhige Atmosphäre schaffen eine kleine Auszeit
@@ -55,6 +46,36 @@ export function Studio() {
           </div>
         </Reveal>
       </div>
+
+      {/* Studio gallery */}
+      <div className="mx-auto max-w-6xl px-5 sm:px-8 mt-16 md:mt-20">
+        <Reveal delay={120}>
+          <div className="grid sm:grid-cols-3 gap-5 md:gap-7">
+            {gallery.map((item) => (
+              <div key={item.label} className="flex flex-col gap-4">
+                <div
+                  className="overflow-hidden bg-[color:var(--cream)]"
+                  style={{
+                    borderRadius: "28px",
+                    boxShadow: "0 16px 48px -12px rgba(139, 106, 67, 0.14)",
+                  }}
+                >
+                  <img
+                    src={item.src}
+                    alt={`BALI Ästhetik Studio – ${item.label}`}
+                    loading="lazy"
+                    className="w-full aspect-[4/5] object-cover transition-transform duration-700 hover:scale-[1.03]"
+                  />
+                </div>
+                <p className="text-center text-[11px] tracking-[0.26em] uppercase text-[color:var(--gold)]">
+                  {item.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+
     </section>
   );
 }
