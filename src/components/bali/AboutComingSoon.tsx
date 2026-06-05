@@ -9,13 +9,13 @@ export function AboutComingSoon() {
     <section id="about" className="relative overflow-hidden bg-[color:var(--sand)] py-24 md:py-32">
       <Pampas
         side="left"
-        className="left-0 top-10 w-[17vw] h-auto"
+        className="left-0 top-10 w-[48vw] h-auto"
         opacity={0.65}
         blur={1}
       />
       <Pampas
         side="right"
-        className="right-0 bottom-0 w-[17vw] h-auto"
+        className="right-0 bottom-0 w-[48vw] h-auto"
         opacity={0.6}
         blur={1}
       />
