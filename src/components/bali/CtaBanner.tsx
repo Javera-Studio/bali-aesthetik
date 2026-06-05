@@ -5,18 +5,8 @@ import { Pampas } from "./Pampas";
 export function CtaBanner() {
   return (
     <section className="relative overflow-hidden bg-[color:var(--sand-deep)] py-24 md:py-32">
-      <Pampas
-        side="left"
-        className="left-0 bottom-0 w-[48vw] h-auto"
-        opacity={0.6}
-        blur={1}
-      />
-      <Pampas
-        side="right"
-        className="right-0 top-0 w-[48vw] h-auto"
-        opacity={0.6}
-        blur={1}
-      />
+      <Pampas side="left" />
+      <Pampas side="right" />
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"

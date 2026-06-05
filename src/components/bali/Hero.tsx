@@ -34,19 +34,8 @@ export function Hero() {
         }}
       />
 
-      {/* Pampas — vom Browserrand hineinragend, außerhalb jedes Containers */}
-      <Pampas
-        side="left"
-        className="left-[-120px] top-[12%] w-[48vw] h-auto"
-        opacity={0.22}
-        blur={1}
-      />
-      <Pampas
-        side="right"
-        className="right-[-120px] top-[20%] w-[48vw] h-auto"
-        opacity={0.18}
-        blur={1}
-      />
+      <Pampas side="left" />
+      <Pampas side="right" />
 
       {/* Text content */}
       <div className="relative z-10 mx-auto max-w-7xl w-full px-5 sm:px-10 py-24 md:py-36">

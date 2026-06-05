@@ -7,18 +7,8 @@ const upcoming = ["Augenbrauenlifting", "Wimpernlifting", "Henna Brows"];
 export function AboutComingSoon() {
   return (
     <section id="about" className="relative overflow-hidden bg-[color:var(--sand)] py-24 md:py-32">
-      <Pampas
-        side="left"
-        className="left-0 top-10 w-[48vw] h-auto"
-        opacity={0.65}
-        blur={1}
-      />
-      <Pampas
-        side="right"
-        className="right-0 bottom-0 w-[48vw] h-auto"
-        opacity={0.6}
-        blur={1}
-      />
+      <Pampas side="left" />
+      <Pampas side="right" />
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 grid md:grid-cols-5 gap-12 md:gap-16 items-center">
         <Reveal className="md:col-span-2">
           <div className="relative">

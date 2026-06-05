@@ -147,3 +147,52 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ── Pampas decoration ───────────────────────────────────────────── */
+.pampas-deco {
+  position: absolute;
+  width: clamp(260px, 18vw, 420px);
+  height: auto;
+  opacity: 0.16;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+.pampas-deco-left {
+  left: -140px;
+  top: 50%;
+  transform: translateY(-50%);
+  mask-image:
+    linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%),
+    linear-gradient(to right, black 0%, black 55%, transparent 100%);
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%),
+    linear-gradient(to right, black 0%, black 55%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: destination-in;
+}
+.pampas-deco-right {
+  right: -140px;
+  top: 50%;
+  transform: translateY(-50%);
+  mask-image:
+    linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%),
+    linear-gradient(to left, black 0%, black 55%, transparent 100%);
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0%, black 18%, black 55%, transparent 90%),
+    linear-gradient(to left, black 0%, black 55%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: destination-in;
+}
+@media (max-width: 767px) {
+  .pampas-deco {
+    width: 220px;
+    opacity: 0.10;
+  }
+  .pampas-deco-left {
+    left: -120px;
+  }
+  .pampas-deco-right {
+    right: -120px;
+  }
+}
