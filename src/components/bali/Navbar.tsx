@@ -13,9 +13,9 @@ const links = [
 export function Navbar() {
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-[color:var(--cream)]/80 border-b border-[color:var(--border)]">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 h-20 flex items-center justify-between gap-6">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 h-20 md:h-24 flex items-center justify-between gap-6">
         <a href="#top" className="flex items-center gap-3 shrink-0">
-          <img src={logo} alt="BALI ÄSTHETIK Logo" className="h-[74px] w-auto md:h-[89px]" />
+          <img src={logo} alt="BALI ÄSTHETIK Logo" className="h-[88px] w-auto md:h-[107px] translate-y-[5px]" />
         </a>
         <nav className="hidden md:flex items-center gap-9 text-sm tracking-[0.14em] uppercase text-[color:var(--ink-soft)]">
           {links.map((l) => (
