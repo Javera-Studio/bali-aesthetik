@@ -151,7 +151,7 @@
 /* ── Pampas decoration ───────────────────────────────────────────── */
 .pampas-deco {
   position: absolute;
-  width: clamp(260px, 18vw, 420px);
+  width: clamp(286px, 20vw, 462px);
   height: auto;
   opacity: 0.16;
   pointer-events: none;
@@ -159,7 +159,7 @@
   z-index: 0;
 }
 .pampas-deco-left {
-  left: -140px;
+  left: -80px;
   top: 50%;
   transform: translateY(-50%);
   mask-image:
@@ -172,7 +172,7 @@
   -webkit-mask-composite: destination-in;
 }
 .pampas-deco-right {
-  right: -140px;
+  right: -80px;
   top: 50%;
   transform: translateY(-50%);
   mask-image:
@@ -186,13 +186,13 @@
 }
 @media (max-width: 767px) {
   .pampas-deco {
-    width: 220px;
+    width: 242px;
     opacity: 0.10;
   }
   .pampas-deco-left {
-    left: -120px;
+    left: -80px;
   }
   .pampas-deco-right {
-    right: -120px;
+    right: -80px;
   }
 }
