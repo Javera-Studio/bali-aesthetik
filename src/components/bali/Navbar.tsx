@@ -32,7 +32,7 @@ export function Navbar() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden sm:inline-flex items-center justify-center rounded-full bg-[color:var(--ink)] text-[color:var(--cream)] h-[50px] px-[30px] text-[12px] font-[500] tracking-[0.18em] uppercase leading-[1] hover:bg-[color:var(--brown)] transition-colors"
+          className="hidden sm:inline-flex items-center justify-center rounded-full bg-[color:var(--ink)] text-[color:var(--cream)] h-[52px] px-9 text-[14px] font-[400] tracking-[0.03em] leading-[1.4] hover:bg-[color:var(--brown)] transition-colors"
         >
           WhatsApp
         </a>

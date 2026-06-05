@@ -156,7 +156,7 @@ export function Leistungen() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[12px] font-[500] tracking-[0.18em] uppercase text-[color:var(--gold)] hover:text-[color:var(--brown)] transition-colors border-b border-[color:var(--gold)]/40 pb-1"
+                className="inline-flex items-center gap-2 text-[14px] font-[400] tracking-[0.03em] text-[color:var(--gold)] hover:text-[color:var(--brown)] transition-colors border-b border-[color:var(--gold)]/40 pb-1"
               >
                 Beratung anfragen <span aria-hidden>→</span>
               </a>
