@@ -4,6 +4,7 @@ import { Hero } from "@/components/bali/Hero";
 import { Studio } from "@/components/bali/Studio";
 import { Leistungen } from "@/components/bali/Leistungen";
 import { Techniken } from "@/components/bali/Techniken";
+import { SignatureLooks } from "@/components/bali/SignatureLooks";
 import { Ergebnisse } from "@/components/bali/Ergebnisse";
 import { AboutComingSoon } from "@/components/bali/AboutComingSoon";
 import { Reviews } from "@/components/bali/Reviews";
@@ -23,6 +24,7 @@ function Index() {
         <Studio />
         <Leistungen />
         <Techniken />
+        <SignatureLooks />
         <Ergebnisse />
         <AboutComingSoon />
         <Reviews />
