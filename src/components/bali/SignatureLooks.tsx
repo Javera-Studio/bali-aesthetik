@@ -139,7 +139,7 @@ export function SignatureLooks() {
                 </div>
 
                 <div
-                  className={`rounded-[2rem] overflow-hidden gold-frame bg-[color:var(--sand)] aspect-[4/5] ${
+                  className={`md:max-w-[70%] md:mx-auto w-full rounded-[2rem] overflow-hidden gold-frame bg-[color:var(--sand)] aspect-[4/5] ${
                     look.imageRight ? "" : "md:order-1"
                   }`}
                 >
