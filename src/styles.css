@@ -151,7 +151,7 @@
 /* ── Pampas decoration ───────────────────────────────────────────── */
 .pampas-deco {
   position: absolute;
-  width: clamp(286px, 20vw, 462px);
+  width: clamp(858px, 60vw, 1386px);
   height: auto;
   opacity: 0.16;
   pointer-events: none;
@@ -186,7 +186,7 @@
 }
 @media (max-width: 767px) {
   .pampas-deco {
-    width: 242px;
+    width: 726px;
     opacity: 0.10;
   }
   .pampas-deco-left {
