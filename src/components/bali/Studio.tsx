@@ -7,9 +7,9 @@ const values = [
 ];
 
 const gallery = [
-  { src: "/images/studio1.jpg", label: "Empfang" },
-  { src: "/images/studio2.jpg", label: "Atmosphäre" },
-  { src: "/images/studio3.jpg", label: "Details" },
+  { src: "/images/studio1.jpg", label: "Willkommen", sub: "Dein erster Eindruck" },
+  { src: "/images/studio2.jpg", label: "Ein Ort zum Wohlfühlen", sub: "Wärme, Ruhe und Entspannung" },
+  { src: "/images/studio3.jpg", label: "Deine Behandlung", sub: "Präzision & Ästhetik" },
 ];
 
 export function Studio() {
@@ -66,9 +66,14 @@ export function Studio() {
                     className="w-full aspect-[4/5] object-cover transition-transform duration-700 hover:scale-[1.03]"
                   />
                 </div>
-                <p className="text-center text-[11px] tracking-[0.26em] uppercase text-[color:var(--gold)]">
-                  {item.label}
-                </p>
+                <div className="text-center pt-1">
+                  <p className="text-[11px] tracking-[0.26em] uppercase text-[color:var(--gold)]">
+                    {item.label}
+                  </p>
+                  <p className="mt-1.5 font-display text-[17px] text-[color:var(--ink)] leading-snug">
+                    {item.sub}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
