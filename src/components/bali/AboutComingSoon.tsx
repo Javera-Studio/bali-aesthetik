@@ -2,7 +2,7 @@ const angelina = "/images/angelina.jpeg";
 import { Reveal } from "./Reveal";
 import { Pampas } from "./Pampas";
 
-const upcoming = ["Augenbrauen", "Wimpernlifting", "Henna Brows"];
+const upcoming = ["Augenbrauenlifting", "Wimpernlifting", "Henna Brows"];
 
 export function AboutComingSoon() {
   return (
@@ -42,11 +42,19 @@ export function AboutComingSoon() {
             Ich bin <span className="font-script text-[color:var(--gold)]">Angelina</span>
           </h2>
           <p className="mt-6 text-[color:var(--ink-soft)] text-lg leading-relaxed">
-            Ich bin Angelina, Beauty-Expertin mit Leidenschaft für Ästhetik und Perfektion. Mit
-            viel Liebe zum Detail helfe ich meinen Kundinnen, ihre natürliche Schönheit zu
-            unterstreichen und sich selbstbewusst sowie wohl in ihrer Haut zu fühlen. Qualität,
-            Professionalität und individuelle Betreuung stehen bei mir dabei immer an erster
-            Stelle.
+            Seit über 7 Jahren habe ich mich auf professionelle Wimpernverlängerungen spezialisiert
+            – eine Leidenschaft, die mich bis heute jeden Tag begeistert.
+          </p>
+          <p className="mt-4 text-[color:var(--ink-soft)] text-lg leading-relaxed">
+            Mit viel Liebe zum Detail, hochwertigen Produkten und einem geschulten Blick für
+            Ästhetik unterstreiche ich die natürliche Schönheit meiner Kundinnen und kreiere Looks,
+            die individuell zur Augenform und Persönlichkeit passen.
+          </p>
+          <p className="mt-4 text-[color:var(--ink-soft)] text-lg leading-relaxed">
+            Neben präziser Arbeit und höchsten Qualitätsstandards ist mir vor allem eines wichtig:
+            Dass du dich bei jedem Termin rundum wohlfühlst. In meinem Studio erwartet dich eine
+            entspannte Atmosphäre, in der du dem Alltag für einen Moment entfliehen und deine
+            persönliche Auszeit genießen kannst.
           </p>
 
           <div className="mt-10 rounded-2xl bg-[color:var(--cream)] border border-[color:var(--border)] p-7">
@@ -54,8 +62,8 @@ export function AboutComingSoon() {
               Ab August neu
             </p>
             <p className="text-[color:var(--ink-soft)] leading-relaxed">
-              Aktuell liegt mein Fokus auf Wimpernverlängerung. Ab August erweitere ich mein
-              Angebot um Augenbrauen, Wimpernlifting und Henna Brows.
+              Mein Angebot wächst weiter. Neben professionellen Wimpernverlängerungen erwarten dich
+              schon bald weitere Treatments für einen gepflegten, natürlichen und harmonischen Look.
             </p>
             <div className="mt-5 flex flex-wrap gap-2.5">
               {upcoming.map((u) => (
