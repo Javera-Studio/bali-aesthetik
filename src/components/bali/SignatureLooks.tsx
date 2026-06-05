@@ -5,7 +5,7 @@ import { WHATSAPP_URL } from "@/lib/contact";
 const looks = [
   {
     id: "classic",
-    image: "/images/look_classic.jpg",
+    image: "/images/lookclassic.png",
     heading: "Classic",
     sub: "Natürlich & zeitlos",
     text: "Für einen natürlichen, gepflegten Look. Ideal, wenn du deine eigenen Wimpern dezent betonen möchtest.",
@@ -13,7 +13,7 @@ const looks = [
   },
   {
     id: "hybrid",
-    image: "/images/look_hybrid.jpg",
+    image: "/images/lookhybrid.png",
     heading: "Hybrid",
     sub: "Die perfekte Balance",
     text: "Eine Mischung aus Classic und Volume – mehr Fülle, aber trotzdem weich und feminin.",
@@ -21,7 +21,7 @@ const looks = [
   },
   {
     id: "volume",
-    image: "/images/look_volumen.jpg",
+    image: "/images/lookvolumen.png",
     heading: "Volume",
     sub: "Weich & ausdrucksstark",
     text: "Für mehr Dichte und einen intensiveren Blick, ohne dass der Look zu schwer wirkt.",
@@ -29,7 +29,7 @@ const looks = [
   },
   {
     id: "wispy",
-    image: "/images/look_wispy.jpg",
+    image: "/images/lookwispy.png",
     heading: "Wispy Volume",
     sub: "Modern & luftig",
     text: "Ein strukturierter Look mit unterschiedlichen Längen für einen trendbewussten, soften Strip-Lash-Effekt.",
@@ -37,7 +37,7 @@ const looks = [
   },
   {
     id: "megavolumen",
-    image: "/images/look_megavolumen.jpg",
+    image: "/images/lookmegavolumen.png",
     heading: "Mega Volume",
     sub: "Glamourös & intensiv",
     text: "Für einen besonders dichten, dunklen und auffälligen Look mit maximaler Wirkung.",
