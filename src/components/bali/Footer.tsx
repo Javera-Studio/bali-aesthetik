@@ -5,7 +5,7 @@ const logo = "/images/logo.png";
 export function Footer() {
   return (
     <footer className="bg-[color:var(--cream)] border-t border-[color:var(--border)]">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 grid md:grid-cols-2 gap-10">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 grid md:grid-cols-3 gap-10 items-start">
         <div>
           <img src={logo} alt="BALI ÄSTHETIK" className="h-[73px] w-auto" />
           <p className="mt-5 text-sm text-[color:var(--ink-soft)] leading-relaxed">
@@ -13,6 +13,22 @@ export function Footer() {
             <br />
             Lashes &amp; Brows · {STUDIO_LOCATION}
           </p>
+        </div>
+        <div>
+          <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--gold)] mb-4">
+            Standort
+          </p>
+          <div className="rounded-xl overflow-hidden border border-[color:var(--border)] shadow-sm aspect-[4/3]">
+            <iframe
+              title="BALI ÄSTHETIK Standort Bitburg"
+              src="https://maps.google.com/maps?q=Bitburger+Stra%C3%9Fe+2,+54636+Rittersdorf,+Germany&z=15&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0, display: "block" }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </div>
         <div>
           <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--gold)] mb-4">
@@ -28,24 +44,6 @@ export function Footer() {
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-      <div className="border-t border-[color:var(--border)] px-5 sm:px-8 py-10">
-        <div className="mx-auto max-w-7xl">
-          <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--gold)] mb-5 text-center">
-            Standort
-          </p>
-          <div className="rounded-2xl overflow-hidden border border-[color:var(--border)] shadow-sm">
-            <iframe
-              title="BALI ÄSTHETIK Standort Bitburg"
-              src="https://maps.google.com/maps?q=Bitburger+Stra%C3%9Fe+2,+54636+Rittersdorf,+Germany&z=15&output=embed"
-              width="100%"
-              height="280"
-              style={{ border: 0, display: "block" }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
         </div>
       </div>
       <div className="border-t border-[color:var(--border)]">

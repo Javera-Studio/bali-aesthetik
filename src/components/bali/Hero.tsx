@@ -60,13 +60,13 @@ export function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[#4A3427] text-white h-[52px] px-8 text-[13px] font-medium tracking-[0.12em] uppercase leading-[1.2] hover:bg-[#5A4031] transition-colors"
+              className="inline-flex items-center justify-center rounded-full bg-[#4A3427] text-white h-[50px] px-[30px] text-[12px] font-[500] tracking-[0.18em] uppercase leading-[1] hover:bg-[#5A4031] transition-colors"
             >
               {WHATSAPP_CTA}
             </a>
             <a
               href="#leistungen"
-              className="inline-flex items-center justify-center rounded-full border border-[#D8C7B7] bg-transparent text-[#7A6454] h-[52px] px-8 text-[13px] font-medium tracking-[0.12em] uppercase leading-[1.2] hover:bg-[#F5F0EA] transition-colors"
+              className="inline-flex items-center justify-center rounded-full border border-[#D8C7B7] bg-transparent text-[#7A6454] h-[50px] px-[30px] text-[12px] font-[500] tracking-[0.18em] uppercase leading-[1] hover:bg-[#F5F0EA] transition-colors"
             >
               Preise ansehen
             </a>
