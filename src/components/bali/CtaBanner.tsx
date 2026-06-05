@@ -8,14 +8,14 @@ export function CtaBanner() {
       <Pampas
         side="left"
         className="left-0 bottom-0 h-[460px] w-auto"
-        opacity={0.3}
-        blur={2}
+        opacity={0.6}
+        blur={1}
       />
       <Pampas
         side="right"
         className="right-0 top-0 h-[440px] w-auto"
-        opacity={0.3}
-        blur={2}
+        opacity={0.6}
+        blur={1}
       />
       <div
         aria-hidden
