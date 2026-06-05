@@ -1,3 +1,4 @@
+const technik = "/images/technik.jpg";
 import { Reveal } from "./Reveal";
 
 const looks = [
@@ -6,7 +7,7 @@ const looks = [
     image: "/images/look_classic.jpg",
     heading: "Classic",
     sub: "Natürlich & zeitlos",
-    text: "Die perfekte Wahl für Kundinnen, die ihre eigenen Wimpern dezent betonen möchten. Leicht, elegant und alltagstauglich für einen natürlichen Look.",
+    text: "Für einen natürlichen, gepflegten Look. Ideal, wenn du deine eigenen Wimpern dezent betonen möchtest.",
     imageRight: true,
   },
   {
@@ -14,31 +15,31 @@ const looks = [
     image: "/images/look_hybrid.jpg",
     heading: "Hybrid",
     sub: "Die perfekte Balance",
-    text: "Eine Kombination aus klassischen und Volumen-Wimpern. Mehr Fülle und Definition, ohne künstlich zu wirken. Besonders beliebt für einen weichen und femininen Look.",
+    text: "Eine Mischung aus Classic und Volume – mehr Fülle, aber trotzdem weich und feminin.",
     imageRight: false,
   },
   {
-    id: "volumen",
+    id: "volume",
     image: "/images/look_volumen.jpg",
-    heading: "Volumen",
-    sub: "Ausdrucksstark & weich",
-    text: "Feine Volumen-Fächer sorgen für mehr Dichte und einen intensiveren Blick. Ideal für Kundinnen, die ihre Augen stärker betonen möchten.",
+    heading: "Volume",
+    sub: "Weich & ausdrucksstark",
+    text: "Für mehr Dichte und einen intensiveren Blick, ohne dass der Look zu schwer wirkt.",
     imageRight: true,
-  },
-  {
-    id: "megavolumen",
-    image: "/images/look_megavolumen.jpg",
-    heading: "Mega Volumen",
-    sub: "Maximale Intensität",
-    text: "Für alle, die einen glamourösen und auffälligen Look lieben. Besonders dicht, dunkel und ausdrucksstark mit maximaler Wirkung.",
-    imageRight: false,
   },
   {
     id: "wispy",
     image: "/images/look_wispy.jpg",
-    heading: "Wispy",
-    sub: "Modern & trendbewusst",
-    text: "Unterschiedliche Längen erzeugen einen luftigen, strukturierten Look mit besonderer Tiefe. Perfekt für Kundinnen, die einen modernen und individuellen Stil bevorzugen.",
+    heading: "Wispy Volume",
+    sub: "Modern & luftig",
+    text: "Ein strukturierter Look mit unterschiedlichen Längen für einen trendbewussten, soften Strip-Lash-Effekt.",
+    imageRight: false,
+  },
+  {
+    id: "megavolumen",
+    image: "/images/look_megavolumen.jpg",
+    heading: "Mega Volume",
+    sub: "Glamourös & intensiv",
+    text: "Für einen besonders dichten, dunklen und auffälligen Look mit maximaler Wirkung.",
     imageRight: true,
   },
 ];
@@ -48,24 +49,68 @@ export function SignatureLooks() {
     <section id="looks" className="bg-[#F5F0EA] py-24 md:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
 
-        {/* Header */}
+        {/* Section header */}
         <Reveal>
-          <div className="text-center max-w-2xl mx-auto mb-20 md:mb-28">
+          <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
             <p className="text-xs tracking-[0.32em] uppercase text-[color:var(--gold)] mb-5">
-              Eyelash Styles
+              Lash Styles
             </p>
             <h2 className="font-display text-4xl md:text-6xl leading-tight text-[color:var(--ink)]">
               Unsere Signature Looks
             </h2>
             <div className="mx-auto mt-6 h-px w-16 bg-[color:var(--gold)]/50" />
             <p className="mt-6 text-[color:var(--ink-soft)] text-lg leading-relaxed">
-              Jeder Look wird individuell auf deine Augenform, natürliche
-              Wimpernstruktur und deinen persönlichen Stil abgestimmt.
+              Jeder Look wird individuell auf deine Augenform, deine natürliche Wimpernstruktur und
+              deinen persönlichen Stil abgestimmt – von natürlich dezent bis glamourös ausdrucksstark.
             </p>
           </div>
         </Reveal>
 
-        {/* Zig-Zag Blocks */}
+        {/* Intro: Technik-Bild links + kompakte Look-Übersicht rechts */}
+        <Reveal delay={80}>
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+            <div className="rounded-[2rem] overflow-hidden gold-frame bg-[color:var(--cream)]">
+              <img
+                src={technik}
+                alt="Verschiedene Wimpern-Techniken bei BALI Ästhetik"
+                width={900}
+                height={1000}
+                loading="lazy"
+                className="w-full h-[400px] md:h-[540px] object-cover"
+              />
+            </div>
+
+            <div>
+              <p className="text-[color:var(--ink-soft)] leading-relaxed mb-8 text-base md:text-lg max-w-md">
+                Fünf Stile – jeder mit eigenem Charakter, jeder angepasst an dein natürliches Erscheinungsbild
+                und deinen persönlichen Wunschlook.
+              </p>
+              <ul className="divide-y divide-[color:var(--border)] border-y border-[color:var(--border)]">
+                {looks.map((look) => (
+                  <li key={look.id} className="py-4 flex items-baseline gap-5">
+                    <p className="font-display text-xl text-[color:var(--ink)] w-40 shrink-0">
+                      {look.heading}
+                    </p>
+                    <p className="text-xs tracking-[0.14em] uppercase text-[color:var(--gold)]">
+                      {look.sub}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+          </div>
+        </Reveal>
+
+        {/* Divider into zig-zag */}
+        <div className="my-20 md:my-28 flex items-center gap-6">
+          <div className="flex-1 h-px bg-[color:var(--border)]" />
+          <div className="h-1 w-1 rounded-full bg-[color:var(--gold)]/50" />
+          <div className="flex-1 h-px bg-[color:var(--border)]" />
+        </div>
+
+        {/* Zig-zag detail blocks */}
         <div className="space-y-20 md:space-y-28">
           {looks.map((look, i) => (
             <Reveal key={look.id} delay={80}>
@@ -74,7 +119,6 @@ export function SignatureLooks() {
                   look.imageRight ? "" : "md:[&>*:first-child]:order-2"
                 }`}
               >
-                {/* Text */}
                 <div className="flex flex-col justify-center">
                   <p className="text-xs tracking-[0.32em] uppercase text-[color:var(--gold)] mb-3">
                     0{i + 1}
@@ -91,7 +135,6 @@ export function SignatureLooks() {
                   </p>
                 </div>
 
-                {/* Image */}
                 <div
                   className={`rounded-[2rem] overflow-hidden gold-frame bg-[color:var(--sand)] aspect-[4/5] ${
                     look.imageRight ? "" : "md:order-1"
