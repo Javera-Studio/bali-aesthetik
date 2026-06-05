@@ -7,21 +7,21 @@ const upcoming = ["Augenbrauen", "Wimpernlifting", "Henna Brows"];
 export function AboutComingSoon() {
   return (
     <section id="about" className="relative overflow-hidden bg-[color:var(--sand)] py-24 md:py-32">
-      <div className="relative mx-auto max-w-7xl px-5 sm:px-8 grid md:grid-cols-5 gap-12 md:gap-16 items-center">
+      <Pampas
+        side="left"
+        className="left-0 top-10 h-[560px] lg:h-[680px] w-auto"
+        opacity={0.3}
+        blur={3}
+      />
+      <Pampas
+        side="right"
+        className="right-0 bottom-0 h-[480px] lg:h-[580px] w-auto"
+        opacity={0.28}
+        blur={4}
+      />
+      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 grid md:grid-cols-5 gap-12 md:gap-16 items-center">
         <Reveal className="md:col-span-2">
           <div className="relative">
-            <Pampas
-              side="left"
-              className="-left-16 -top-10 h-[460px] lg:h-[600px] w-auto"
-              opacity={0.3}
-              blur={3}
-            />
-            <Pampas
-              side="right"
-              className="-right-12 -bottom-10 h-[400px] lg:h-[520px] w-auto"
-              opacity={0.28}
-              blur={4}
-            />
             <div className="relative rounded-[2rem] overflow-hidden gold-frame">
               <img
                 src={angelina}
@@ -34,7 +34,7 @@ export function AboutComingSoon() {
             </div>
           </div>
         </Reveal>
-        <Reveal delay={120} className="md:col-span-3">
+        <Reveal delay={120} className="relative z-10 md:col-span-3">
           <p className="text-xs tracking-[0.32em] uppercase text-[color:var(--gold)] mb-5">
             Über mich
           </p>
