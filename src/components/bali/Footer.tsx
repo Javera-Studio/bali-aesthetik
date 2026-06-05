@@ -30,6 +30,24 @@ export function Footer() {
           </ul>
         </div>
       </div>
+      <div className="border-t border-[color:var(--border)] px-5 sm:px-8 py-10">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--gold)] mb-5 text-center">
+            Standort
+          </p>
+          <div className="rounded-2xl overflow-hidden border border-[color:var(--border)] shadow-sm">
+            <iframe
+              title="BALI ÄSTHETIK Standort Bitburg"
+              src="https://maps.google.com/maps?q=Bitburg,Germany&z=13&output=embed"
+              width="100%"
+              height="280"
+              style={{ border: 0, display: "block" }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </div>
       <div className="border-t border-[color:var(--border)]">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[color:var(--ink-soft)]">
           <p>© {new Date().getFullYear()} BALI ÄSTHETIK · Alle Rechte vorbehalten.</p>
