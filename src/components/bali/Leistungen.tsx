@@ -1,6 +1,5 @@
 import { WHATSAPP_URL } from "@/lib/contact";
 import { Reveal } from "./Reveal";
-import { Pampas } from "./Pampas";
 import { Heart } from "lucide-react";
 
 const tiers = [
@@ -59,7 +58,6 @@ export function Leistungen() {
       id="leistungen"
       className="relative overflow-hidden bg-[color:var(--cream)] py-24 md:py-32"
     >
-      <Pampas side="left" />
 
       {/* Großes transparentes B im Hintergrund */}
       <div

@@ -159,12 +159,12 @@
   z-index: 0;
 }
 .pampas-deco-left {
-  left: -120px;
+  left: 0;
   bottom: 0;
   transform: translateY(35%);
 }
 .pampas-deco-right {
-  right: -120px;
+  right: 0;
   bottom: 0;
   transform: translateY(35%);
 }
@@ -172,11 +172,5 @@
   .pampas-deco {
     width: 726px;
     opacity: 0.08;
-  }
-  .pampas-deco-left {
-    left: -120px;
-  }
-  .pampas-deco-right {
-    right: -120px;
   }
 }

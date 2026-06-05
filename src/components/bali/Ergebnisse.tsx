@@ -1,5 +1,4 @@
 import { Reveal } from "./Reveal";
-import { Pampas } from "./Pampas";
 import { WHATSAPP_URL } from "@/lib/contact";
 
 const gallery = [
@@ -12,7 +11,6 @@ const gallery = [
 export function Ergebnisse() {
   return (
     <section id="ergebnisse" className="relative overflow-hidden bg-[color:var(--cream)] py-24 md:py-32">
-      <Pampas side="right" />
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <div className="max-w-2xl">
