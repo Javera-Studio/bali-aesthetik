@@ -6,6 +6,7 @@ const reviews = [
   "Tolle Arbeit! Meine Wimpern sehen einfach perfekt aus – voller, aber trotzdem natürlich.",
   "Absolut zu empfehlen! Tolle, saubere Arbeit und immer das schönste Ergebnis. Dazu auch noch ein sehr sympathischer Mensch.",
   "Es ist jedes Mal wie eine kleine Wellnessauszeit. Angelina macht unfassbar schöne und saubere Arbeit.",
+  "Die schönsten Wimpern die es gibt! Sie ist fachlich sehr kompetent, versteht ihre Arbeit! Sie berät einen immer sehr gut und arbeitet hygienisch und sauber! Hinzu kommt ein extra Stern für ihre sehr freundliche und herzliche Art.",
 ];
 
 function Star() {
