@@ -151,18 +151,18 @@
 /* ── Pampas decoration ───────────────────────────────────────────── */
 .pampas-deco {
   position: absolute;
-  width: clamp(260px, 18vw, 420px);
+  width: clamp(320px, 22vw, 520px);
   height: auto;
-  opacity: 0.06;
+  opacity: 0.11;
   pointer-events: none;
   user-select: none;
   z-index: 0;
 }
 .pampas-left {
-  left: -150px;
-  bottom: 0;
+  left: -90px;
+  bottom: -20px;
 }
 .pampas-right {
-  right: -150px;
-  bottom: 0;
+  right: -90px;
+  bottom: -20px;
 }
