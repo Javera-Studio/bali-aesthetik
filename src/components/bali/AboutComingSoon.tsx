@@ -1,5 +1,6 @@
 const angelina = "/images/angelina.jpeg";
 import { Reveal } from "./Reveal";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 const upcoming = ["Augenbrauenlifting", "Wimpernlifting", "Henna Brows"];
 
@@ -44,7 +45,21 @@ export function AboutComingSoon() {
             persönliche Auszeit genießen kannst.
           </p>
 
-          <div className="mt-10 rounded-2xl bg-[color:var(--cream)] border border-[color:var(--border)] p-7">
+          <div className="mt-10 pt-8 border-t border-[color:var(--border)]">
+              <p className="text-[color:var(--ink-soft)] leading-relaxed mb-6">
+                Lerne mich persönlich kennen und lass uns gemeinsam deinen perfekten Look finden.
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-[color:var(--ink)] text-[color:var(--cream)] h-[52px] px-10 text-[14px] font-[400] tracking-[0.03em] leading-[1.4] hover:bg-[color:var(--brown)] transition-colors"
+              >
+                Termin anfragen
+              </a>
+            </div>
+
+          <div className="mt-6 rounded-2xl bg-[color:var(--cream)] border border-[color:var(--border)] p-7">
             <p className="text-xs tracking-[0.28em] uppercase text-[color:var(--gold)] mb-3">
               Ab August neu
             </p>

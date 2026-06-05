@@ -1,5 +1,5 @@
 const studio = "/images/studio.jpeg";
-import { WHATSAPP_URL, WHATSAPP_CTA, STUDIO_LOCATION } from "@/lib/contact";
+import { STUDIO_LOCATION } from "@/lib/contact";
 
 export function Hero() {
   return (
@@ -50,22 +50,6 @@ export function Hero() {
             Wimpernverlängerung mit Liebe zum Detail – für einen Look, der natürlich, elegant und
             individuell zu dir passt.
           </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[#4A3427] text-white h-[52px] px-10 text-[14px] font-[400] tracking-[0.03em] leading-[1.4] hover:bg-[#5A4031] transition-colors"
-            >
-              {WHATSAPP_CTA}
-            </a>
-            <a
-              href="#leistungen"
-              className="inline-flex items-center justify-center rounded-full border border-[#D8C7B7] bg-transparent text-[#7A6454] h-[52px] px-10 text-[14px] font-[400] tracking-[0.03em] leading-[1.4] hover:bg-[#F5F0EA] transition-colors"
-            >
-              Preise ansehen
-            </a>
-          </div>
         </div>
       </div>
     </section>
