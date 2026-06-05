@@ -20,7 +20,7 @@ export function Footer() {
           </p>
           <ul className="space-y-2.5 text-sm text-[color:var(--ink-soft)]">
             <li><a href="#leistungen" className="hover:text-[color:var(--ink)] transition-colors">Preise</a></li>
-            <li><a href="#techniken" className="hover:text-[color:var(--ink)] transition-colors">Techniken</a></li>
+            <li><a href="#looks" className="hover:text-[color:var(--ink)] transition-colors">Lash Styles</a></li>
             <li><a href="#about" className="hover:text-[color:var(--ink)] transition-colors">Über mich</a></li>
             <li>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[color:var(--ink)] transition-colors">
@@ -38,7 +38,7 @@ export function Footer() {
           <div className="rounded-2xl overflow-hidden border border-[color:var(--border)] shadow-sm">
             <iframe
               title="BALI ÄSTHETIK Standort Bitburg"
-              src="https://maps.google.com/maps?q=Bitburg,Germany&z=13&output=embed"
+              src="https://maps.google.com/maps?q=Bitburger+Stra%C3%9Fe+2,+54636+Rittersdorf,+Germany&z=15&output=embed"
               width="100%"
               height="280"
               style={{ border: 0, display: "block" }}
