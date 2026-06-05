@@ -31,7 +31,8 @@ export function CtaBanner() {
             Kontakt
           </p>
           <h2 className="font-display text-4xl md:text-6xl leading-tight">
-            Bereit für deinen neuen{" "}
+            Bereit für deinen neuen
+            <br />
             <span className="font-script text-[color:var(--gold)]">Lash-Look?</span>
           </h2>
           <p className="mt-6 text-[color:var(--ink-soft)] text-lg leading-relaxed">
