@@ -89,7 +89,17 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-[color:var(--border)]">
         <div className="mx-auto max-w-5xl px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[color:var(--ink-soft)]">
-          <p>© {new Date().getFullYear()} BALI ÄSTHETIK · Alle Rechte vorbehalten.</p>
+          <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+            <span>© {new Date().getFullYear()} BALI ÄSTHETIK · Alle Rechte vorbehalten.</span>
+            <span className="hidden sm:inline">·</span>
+            <a href="/impressum" className="hover:text-[color:var(--ink)] transition-colors duration-200">
+              Impressum
+            </a>
+            <span>·</span>
+            <a href="/datenschutz" className="hover:text-[color:var(--ink)] transition-colors duration-200">
+              Datenschutz
+            </a>
+          </p>
           <a
             href="https://javera-studio.at"
             target="_blank"
